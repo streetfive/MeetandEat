@@ -6,7 +6,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+
 import javax.swing.JButton;
 import java.awt.Font;
 
@@ -44,36 +44,34 @@ public class AuswahlKantinen {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 550, 350);
+		frame.setBounds(100, 100, 500, 350);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(20, 11, 46, 14);
+		JLabel lblNewLabel = new JLabel("Meet & Eat Planer");
+		lblNewLabel.setBounds(20, 11, 120, 14);
+		
 		frame.getContentPane().add(lblNewLabel);
 		
 		JRadioButton rdbtnFacetoFace = new JRadioButton("Face to Face");
-		rdbtnFacetoFace.setBounds(20, 49, 109, 23);
+		rdbtnFacetoFace.setBounds(20, 70, 109, 23);
 		frame.getContentPane().add(rdbtnFacetoFace);
 		
 		JRadioButton rdbtnviererTisch = new JRadioButton("4er-Tisch");
-		rdbtnviererTisch.setBounds(20, 79, 109, 23);
+		rdbtnviererTisch.setBounds(20, 90, 109, 23);
 		frame.getContentPane().add(rdbtnviererTisch);
 		
 		JRadioButton rdbtnLastMinute = new JRadioButton("Lastminute");
-		rdbtnLastMinute.setBounds(20, 105, 109, 23);
+		rdbtnLastMinute.setBounds(20, 110, 109, 23);
 		frame.getContentPane().add(rdbtnLastMinute);
 		
 		JComboBox auswahlDerKantine = new JComboBox();
 		auswahlDerKantine.setBounds(20, 181, 109, 30);
 		frame.getContentPane().add(auswahlDerKantine);
 		
-		JLabel label = new JLabel("New label");
-		label.setBounds(79, 53, 46, 14);
-		frame.getContentPane().add(label);
 		
 		JLabel lblVarianten = new JLabel("Varianten");
-		lblVarianten.setBounds(20, 28, 46, 14);
+		lblVarianten.setBounds(20, 53, 60, 14);
 		frame.getContentPane().add(lblVarianten);
 		
 		JPanel panel = new JPanel();
@@ -82,7 +80,7 @@ public class AuswahlKantinen {
 		
 		text_Datum = new JTextField();
 		panel.add(text_Datum);
-		text_Datum.setColumns(10);
+		text_Datum.setColumns(6);
 		
 		textUhrzeit = new JTextField();
 		panel.add(textUhrzeit);
@@ -102,7 +100,7 @@ public class AuswahlKantinen {
 		frame.getContentPane().add(lbl_Uhrzeit);
 		
 		JButton btn_Bestaetigen = new JButton("Best\u00E4tigen");
-		btn_Bestaetigen.setBounds(20, 254, 89, 23);
+		btn_Bestaetigen.setBounds(20, 254, 95, 23);
 		frame.getContentPane().add(btn_Bestaetigen);
 		
 		JButton btn_Zurueck = new JButton("Zur\u00FCck");
@@ -110,7 +108,7 @@ public class AuswahlKantinen {
 		frame.getContentPane().add(btn_Zurueck);
 		
 		JButton btn_abbrechen = new JButton("Abbrechen");
-		btn_abbrechen.setBounds(219, 254, 89, 23);
+		btn_abbrechen.setBounds(219, 254, 97, 23);
 		frame.getContentPane().add(btn_abbrechen);
 		
 		JRadioButton rdbtnRichtlinien = new JRadioButton("Ich habe die Bedingungen gelesen und erkl\u00E4re mich einverstanden.");
